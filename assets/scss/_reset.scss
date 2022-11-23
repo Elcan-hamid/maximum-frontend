@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: $dark-blue;
+    font-weight: weight(regular);
+    font-size: 16px;
+    line-height: 18px;
+}
+
+h1{font-size: $title-size}
+h2{font-size: $heading-size; font-weight: weight(medium)}
+h3{font-size: $subheading-size; font-weight: weight(medium)}
+
+a{ text-decoration: none; }
+p{ margin-bottom: 0; }
+
+ul, li, ol{
+    margin: 0;
+    padding: 0;
+}
+
+.btn:focus{
+    box-shadow: none;
+}
