@@ -17,14 +17,35 @@ $font-weights: (
     "bold": 700
 );
 
+$colors: ("yellow": $yellow, "blue": $blue, "darkblue": $dark-blue, "lightblue": $light-blue);
+
 @function weight($name){
     @return map-get($font-weights, $name);
+}
+
+@mixin theme-colors($dark-theme: true){
+    @if $dark-theme{
+        background-color: $dark-blue;
+    } @else{
+        background-color: #fff;
+    }
 }
 
 @mixin flexCenter{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin flexItems($justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin borderCorner{
+    border-top: 1px solid $blue;
+    border-bottom: 1px solid $blue;
 }
 
 @mixin media-min($size) {
