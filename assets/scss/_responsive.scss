@@ -1,3 +1,14 @@
 @include media-max(768px){
-    
+    h1{
+        font-size: $title-mb-size !important;
+    }
+    h3{
+        font-size: $subheading-mb-size;
+    }
+}
+
+@include media-max(992px){
+    .arrow-img{
+        display: none;
+    }
 }

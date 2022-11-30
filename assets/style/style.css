@@ -254,19 +254,19 @@ section .base-products-item__img .cover-text {
   position: absolute;
   top: 60px;
   left: 55px;
-  width: 65%;
+  width: 60%;
 }
 
 section .base-products-item__img .cover-text h4 {
   font-size: 26px;
   color: #fff;
+  margin-bottom: 20px;
 }
 
 section .base-products-item__img .cover-text ul {
   color: #F9D522;
   margin-left: 15px;
   margin-bottom: 15px;
-  margin-top: 20px;
 }
 
 section .base-products-item__img .cover-text .base-btn {
@@ -361,5 +361,20 @@ footer .foot-area .third-sec ul a:hover {
 footer span {
   font-size: 14px;
   font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 50px !important;
+  }
+  h3 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .arrow-img {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
