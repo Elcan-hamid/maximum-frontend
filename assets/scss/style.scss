@@ -13,7 +13,7 @@ header{
                 padding-left: 1rem;
                 &.active{
                     padding: 7px 17px;
-                    border-radius: 28px;
+                    border-radius: $border-radius;
                     background-color: $blue;
                     a{
                         color: $dark-blue;
@@ -31,8 +31,8 @@ header{
     }
     .work-with-us{
         border: 2px solid $yellow;
-        border-top-left-radius: 28px;
-        border-bottom-left-radius: 28px;
+        border-top-left-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
         padding: 20px 58px 20px 0;
         border-left-style: none;
         position: relative;
@@ -40,12 +40,76 @@ header{
             background-color: $yellow;
             color: $dark-blue;
             padding: 20px 35px;
-            border-radius: 28px;
+            border-radius: $border-radius;
         }
         img{
             position: absolute;
             top: 22px;
             right: 13px;
+        }
+    }
+}
+
+section{
+    margin: 75px 0 50px;
+    .header-img{
+        position: relative;
+        .cover-text{
+            color: $blue;
+            position: absolute;
+            bottom: 5rem;
+            right: 2rem;
+            width: 17rem;
+            .btn{
+                color: $yellow;
+                border: 1px solid $blue;
+            }
+        }
+    }
+    .dark-text{
+        h1, h2{
+            color: $blue;
+            font-weight: 400;
+            font-size: $title-size;
+        }
+    }
+    .base-products{
+        margin-top: 25px;
+        &-item{
+            border-bottom: 1px solid $blue;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            &__img{
+                position: relative;
+                .cover-text{
+                    position: absolute;
+                    top: 60px;
+                    left: 55px;
+                    width: 65%;
+                    h4{
+                        font-size: 26px;
+                        color: #fff;
+                    }
+                    ul{
+                        color: $yellow;
+                        margin-left: 15px;
+                        margin-bottom: 15px;
+                        margin-top: 20px;
+                    }
+                    .base-btn{
+                        padding: 5px 27px;
+                        background-color: $blue;
+                        color: $dark-blue;
+                        font-size: 14px;
+                    }
+                }
+            }
+            &__title{
+                padding: 31px 55px 25px;
+                background-color: $blue;
+                color: $dark-blue;
+                text-decoration: underline;
+            }
         }
     }
 }
@@ -75,7 +139,9 @@ footer{
         .second-sec{
             @include borderCorner;
             @include media-max(992px){
-                
+                p{
+                    margin-bottom: 20px;
+                }
             }
             padding: 42px 0;
             color: $blue;

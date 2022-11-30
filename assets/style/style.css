@@ -44,8 +44,58 @@ ul, li, ol {
   padding: 0;
 }
 
+.btn {
+  border-radius: 28px;
+}
+
 .btn:focus {
   box-shadow: none;
+}
+
+.btn-outline-yellow {
+  border: 1px solid #F9D522;
+  padding: 15px 38px;
+  font-weight: 500;
+}
+
+.btn-outline-yellow:hover {
+  background-color: #F9D522;
+  color: #123144 !important;
+}
+
+.btn-form-dark {
+  background-color: #123144;
+  color: #fff;
+  padding: 15px 22px;
+  font-weight: 400;
+}
+
+.btn-form-dark:hover {
+  color: #fff;
+}
+
+.btn-form-light {
+  background-color: #A4DCFF;
+  color: #123144;
+  padding: 15px 22px;
+  font-weight: 400;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #A4DCFF !important;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.py-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .flex-center {
@@ -159,6 +209,80 @@ header .work-with-us img {
   right: 13px;
 }
 
+section {
+  margin: 75px 0 50px;
+}
+
+section .header-img {
+  position: relative;
+}
+
+section .header-img .cover-text {
+  color: #A4DCFF;
+  position: absolute;
+  bottom: 5rem;
+  right: 2rem;
+  width: 17rem;
+}
+
+section .header-img .cover-text .btn {
+  color: #F9D522;
+  border: 1px solid #A4DCFF;
+}
+
+section .dark-text h1, section .dark-text h2 {
+  color: #A4DCFF;
+  font-weight: 400;
+  font-size: 96px;
+}
+
+section .base-products {
+  margin-top: 25px;
+}
+
+section .base-products-item {
+  border-bottom: 1px solid #A4DCFF;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+section .base-products-item__img {
+  position: relative;
+}
+
+section .base-products-item__img .cover-text {
+  position: absolute;
+  top: 60px;
+  left: 55px;
+  width: 65%;
+}
+
+section .base-products-item__img .cover-text h4 {
+  font-size: 26px;
+  color: #fff;
+}
+
+section .base-products-item__img .cover-text ul {
+  color: #F9D522;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+section .base-products-item__img .cover-text .base-btn {
+  padding: 5px 27px;
+  background-color: #A4DCFF;
+  color: #123144;
+  font-size: 14px;
+}
+
+section .base-products-item__title {
+  padding: 31px 55px 25px;
+  background-color: #A4DCFF;
+  color: #123144;
+  text-decoration: underline;
+}
+
 footer {
   background-color: #123144;
   padding: 75px 0 50px;
@@ -196,6 +320,12 @@ footer .foot-area .second-sec {
   border-bottom: 1px solid #A4DCFF;
   padding: 42px 0;
   color: #A4DCFF;
+}
+
+@media screen and (max-width: 992px) {
+  footer .foot-area .second-sec p {
+    margin-bottom: 20px;
+  }
 }
 
 footer .foot-area .third-sec {

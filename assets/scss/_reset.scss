@@ -27,8 +27,53 @@ ul, li, ol{
     padding: 0;
 }
 
+.btn{
+    border-radius: $border-radius;
+}
 .btn:focus{
     box-shadow: none;
+}
+
+.btn-outline-yellow{
+    border: 1px solid $yellow;
+    padding: 15px 38px;
+    font-weight: weight(medium);
+    &:hover{
+        background-color: $yellow;
+        color: $dark-blue !important;
+    }
+}
+
+.btn-form-dark{
+    background-color: $dark-blue;
+    color: #fff;
+    padding: 15px 22px;
+    font-weight: weight(regular);
+    &:hover{
+        color: #fff;
+    }
+}
+
+.btn-form-light{
+    background-color: $blue;
+    color: $dark-blue;
+    padding: 15px 22px;
+    font-weight: weight(regular);
+}
+
+.border-bottom{
+    border-bottom: 1px solid $blue !important;
+}
+
+.pt-50{
+    padding-top: 50px;
+}
+.pb-50{
+    padding-bottom: 50px;
+}
+.py-50{
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .flex-center{
