@@ -1,55 +1,81 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-    font-weight: weight(regular);
-    font-size: 16px;
-    line-height: 18px;
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: weight(regular);
+  font-size: 16px;
+  line-height: 18px;
 }
-body.theme-dark{
-    @include theme-colors($dark-theme: true)
-}
-
-h1{font-size: $title-size}
-h2{font-size: $heading-size; font-weight: weight(medium)}
-h3{font-size: $subheading-size; font-weight: weight(medium)}
-
-a{ text-decoration: none; }
-p{ margin-bottom: 0; }
-
-ul, li, ol{
-    margin: 0;
-    padding: 0;
+body.theme-dark {
+  @include theme-colors($dark-theme: true);
 }
 
-.btn:focus{
-    box-shadow: none;
+h1 {
+  font-size: $title-size;
+}
+h2 {
+  font-size: $heading-size;
+  font-weight: weight(medium);
+}
+h3 {
+  font-size: $subheading-size;
+  font-weight: weight(medium);
 }
 
-.flex-center{
-    @include flexCenter;
+a {
+  text-decoration: none;
+}
+p {
+  margin-bottom: 0;
 }
 
-.flex-between-center{
-    @include flexItems(space-between, center);
+ul,
+li,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.text-container {
+  padding: 0 100px;
+}
+
+.flex-center {
+  @include flexCenter;
+}
+
+.flex-between-center {
+  @include flexItems(space-between, center);
 }
 
 @each $name, $color in $colors {
-    .color-#{$name}{
-        color: $color;
-    }
-    .bg-#{$name}{
-        background-color: $color;
-    }
+  .color-#{$name} {
+    color: $color;
+  }
+  .bg-#{$name} {
+    background-color: $color;
+  }
+  .borderBottom-#{$name} {
+    border-bottom: 1px solid $color;
+    width: 250px;
+  }
 }
 
 @each $name, $number in $font-weights {
-    .font-#{$number}{
-        font-weight: weight($name);
-    }
+  .font-#{$number} {
+    font-weight: weight($name);
+  }
 }
