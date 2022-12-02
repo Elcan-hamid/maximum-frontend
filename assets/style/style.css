@@ -11,6 +11,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+  color: #123144;
 }
 
 body.theme-dark {
@@ -33,6 +34,10 @@ h3 {
 
 a {
   text-decoration: none;
+  color: unset;
+}
+a:hover {
+  color: unset;
 }
 
 p {
@@ -179,46 +184,6 @@ section {
 .company .distributor {
   background: linear-gradient(180deg, rgba(164, 220, 255, 0.43) 0%, transparent 15%);
 }
-.company .distributor .distrub-body .head {
-  background-color: #A4DCFF;
-  padding: 35px 80px;
-}
-.company .distributor .distrub-body .head h1 {
-  font-size: 64px;
-}
-.company .distributor .distrub-body .head h3 {
-  font-size: 36px;
-  margin-bottom: 0;
-}
-.company .distributor .distrub-body .head h3:nth-child(3) {
-  margin-right: 135px;
-}
-.company .distributor .distrub-body .list {
-  margin-top: 50px;
-}
-.company .distributor .distrub-body .list ul {
-  margin-left: 15px;
-}
-.company .distributor .distrub-body .list ul li {
-  color: #A4DCFF;
-  margin-bottom: 10px;
-}
-.company .distributor .distrub-body .apply {
-  text-align: right;
-  margin-bottom: 40px;
-}
-.company .distributor .distrub-body .apply button {
-  border: 2px solid #F9D522;
-  padding: 18px 30px;
-  color: #F9D522;
-  background-color: transparent;
-  border-radius: 27px;
-  transition: all 0.5s;
-}
-.company .distributor .distrub-body .apply button:hover {
-  background-color: #F9D522;
-  color: #123144;
-}
 .company .distributor .mission .head {
   color: #fff;
   margin-bottom: 25px;
@@ -343,10 +308,10 @@ section {
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
-  .company .distributor .distrub-body .head h1 {
+  .distributor .distrub-body .head h1 {
     font-size: 55px !important;
   }
-  .company .distributor .distrub-body .head h3 {
+  .distributor .distrub-body .head h3 {
     font-size: 30px !important;
   }
   .company .delivery .right-col .text {
@@ -354,6 +319,12 @@ section {
   }
   .company .delivery .right-col h3:not(.text) {
     font-size: 60px;
+  }
+  .certificates-heading h1 {
+    font-size: 66px;
+  }
+  .workwithus .prot-indust-txt h1 {
+    font-size: 66px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -369,15 +340,18 @@ section {
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  .company .distributor .distrub-body .head {
+  .distributor .distrub-body .head {
     padding: 35px !important;
   }
-  .company .distributor .distrub-body .head h1 {
+  .distributor .distrub-body .head h1 {
     font-size: 45px !important;
   }
-  .company .distributor .distrub-body .head h3 {
+  .distributor .distrub-body .head h3 {
     margin-right: 0 !important;
     font-size: 30px !important;
+  }
+  .workwithus .prot-indust-txt h1 {
+    font-size: 46px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -416,18 +390,50 @@ section {
   }
 }
 @media screen and (max-width: 576px) {
+  .workwithus .request-form__area {
+    padding: 10px 15px !important;
+  }
+  .workwithus .request-form__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .workwithus .prot-indust-txt h1 {
+    font-size: 36px;
+  }
+  .workwithus .customer-form_body_inp {
+    margin: 0;
+  }
+  .workwithus .customer-form_body_inp label {
+    padding-left: 0;
+    margin-bottom: 5px;
+  }
+  .certificates-heading h1 {
+    font-size: 30px !important;
+  }
+  .certificates .box-head {
+    padding: 20px !important;
+  }
+  .certificates .box-head h3 {
+    font-size: 26px;
+  }
+  .certificates .box-body {
+    padding: 20px !important;
+  }
+  .certificates .box-body h3 {
+    font-size: 26px !important;
+  }
   .request h3 {
     font-size: 25px;
   }
-  .company .about-head .borderBottom-yellow {
-    width: 100%;
-  }
-  .company .distributor .distrub-body .head h1 {
+  .distributor .distrub-body .head h1 {
     font-size: 25px !important;
   }
-  .company .distributor .distrub-body .head h3 {
+  .distributor .distrub-body .head h3 {
     font-size: 18px !important;
     margin-right: 0 !important;
+  }
+  .company .about-head .borderBottom-yellow {
+    width: 100%;
   }
   .company .distributor .mission-body .body-text,
 .company .distributor .vision-body .body-text {
@@ -464,8 +470,23 @@ section {
   section {
     padding: 50px 0;
   }
+  .workwithus .request-form__area {
+    border-radius: 0 !important;
+  }
+  .workwithus .customer-form_body {
+    padding: 30px !important;
+  }
+  .certificates-heading {
+    margin-bottom: 50px !important;
+  }
+  .certificates-heading h1 {
+    font-size: 40px;
+  }
   .request-inps {
     flex-direction: column;
+  }
+  .request-inps input {
+    width: 100% !important;
   }
   .request-inps input:nth-child(1) {
     margin-right: 0 !important;
@@ -490,6 +511,162 @@ section {
     font-weight: 500;
   }
 }
+.certificates-heading {
+  margin-bottom: 100px;
+}
+.certificates .box {
+  margin-bottom: 60px;
+}
+.certificates .box:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.certificates .box-head {
+  padding: 20px 60px;
+}
+.certificates .box-head h3 {
+  font-weight: 400;
+}
+.certificates .box-body {
+  padding: 60px;
+}
+
+.workwithus .request-title {
+  font-size: 36px;
+  background-color: #123144;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 13px;
+  padding: 30px 0;
+  height: 140px;
+}
+.workwithus .request-form__area {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 30px 45px;
+  margin-top: -4rem;
+}
+.workwithus .request-form__head {
+  padding: 20px 0;
+  border-bottom: 1px solid #9c9c9c;
+  margin-bottom: 29px;
+}
+.workwithus .request-form__head p {
+  color: #5a5a5a;
+}
+.workwithus .request-form__title {
+  font-weight: 400;
+  font-size: 36px;
+  margin-bottom: 6px;
+}
+.workwithus .request-form .form-label {
+  font-weight: 600;
+}
+.workwithus .request-form .form-control {
+  box-shadow: none;
+}
+.workwithus .request-form .form-control:focus {
+  border: 1px solid #ced4da;
+}
+.workwithus .request-form .sub-btn button {
+  background-color: #F9D522;
+  font-weight: 500;
+  padding: 8px 30px;
+  border: none;
+}
+.workwithus .request-form .uploadFile {
+  background-color: #5a5a5a;
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px 15px;
+  box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.03);
+  resize: none;
+  font-size: 20px;
+}
+.workwithus .request-form .uploadFile [type=file] {
+  display: none;
+}
+.workwithus .request-form .dropdown_selected a::before {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background-color: #123144;
+  position: absolute;
+  top: 0;
+  right: 2.3rem;
+}
+.workwithus .request-form .dropdown_selected img {
+  position: absolute;
+  top: 15px;
+  right: 11px;
+}
+.workwithus .request-form .dropdown_options ul {
+  list-style: none;
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #9c9c9c;
+  border-radius: 3px;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+.workwithus .request-form .dropdown_options ul li {
+  cursor: pointer;
+  padding: 5px 15px;
+}
+.workwithus .request-form .dropdown_options ul li:hover {
+  background-color: #123144;
+  transition: 0.2s ease;
+}
+.workwithus-img {
+  margin-top: -600px;
+  position: relative;
+  z-index: -1;
+  margin-bottom: 60px;
+}
+.workwithus-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 670px;
+  background: linear-gradient(180deg, #ffffff 27%, rgba(255, 255, 255, 0) 100%);
+  z-index: 10;
+}
+.workwithus-img img {
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+.workwithus .customer-form_head {
+  display: inline-block;
+  background-color: #F9D522;
+  padding: 10px 45px;
+  font-weight: 500;
+  border-radius: 52px;
+  margin-bottom: 60px;
+}
+.workwithus .customer-form_body {
+  border: 2px solid #123144;
+  padding: 45px 85px;
+  margin-bottom: 50px;
+}
+.workwithus .customer-form_body_inp {
+  margin-bottom: 20px;
+  align-items: center;
+}
+.workwithus .customer-form_body_inp label {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.workwithus .customer-form_body_inp input {
+  border: 1px solid #123144;
+  padding: 8px !important;
+}
+
 header {
   height: 145px;
   padding: 60px 0 30px;
@@ -612,6 +789,58 @@ header .work-with-us img {
 }
 .request-btn button:hover {
   background-color: #fff;
+  color: #123144;
+}
+
+.distributor .distrub-cont-text {
+  margin-bottom: 60px;
+}
+.distributor .distrub-cont-text p:nth-child(1) {
+  color: #fff;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.distributor .distrub-cont-text p:nth-child(2) {
+  color: rgba(255, 255, 255, 0.5);
+}
+.distributor .distrub-body .head {
+  background-color: #A4DCFF;
+  padding: 35px 80px;
+}
+.distributor .distrub-body .head h1 {
+  font-size: 64px;
+}
+.distributor .distrub-body .head h3 {
+  font-size: 36px;
+  margin-bottom: 0;
+}
+.distributor .distrub-body .head h3:nth-child(3) {
+  margin-right: 135px;
+}
+.distributor .distrub-body .list {
+  margin: 50px 0 30px;
+}
+.distributor .distrub-body .list ul {
+  margin-left: 15px;
+}
+.distributor .distrub-body .list ul li {
+  color: #A4DCFF;
+  margin-bottom: 10px;
+}
+.distributor .distrub-body .apply {
+  text-align: right;
+  margin-bottom: 40px;
+}
+.distributor .distrub-body .apply button {
+  border: 2px solid #F9D522;
+  padding: 18px 30px;
+  color: #F9D522;
+  background-color: transparent;
+  border-radius: 27px;
+  transition: all 0.5s;
+}
+.distributor .distrub-body .apply button:hover {
+  background-color: #F9D522;
   color: #123144;
 }
 

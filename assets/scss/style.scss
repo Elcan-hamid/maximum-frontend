@@ -2,6 +2,8 @@
 @import "reset";
 @import "company";
 @import "responsive";
+@import "certificates";
+@import 'workwithus';
 
 header {
   height: 145px;
@@ -64,15 +66,15 @@ header {
     border-color: $blue !important;
     background-color: $dark-blue !important;
   }
-  .request-btn{
-    button{
-        background-color: $blue !important;
-        color: $dark-blue !important;
-        &:hover{
-            background-color: $dark-blue!important;
-            color: $blue !important;
-            border-color: $blue !important  ;
-        }
+  .request-btn {
+    button {
+      background-color: $blue !important;
+      color: $dark-blue !important;
+      &:hover {
+        background-color: $dark-blue !important;
+        color: $blue !important;
+        border-color: $blue !important  ;
+      }
     }
   }
 }
@@ -96,13 +98,13 @@ header {
   }
   .form-check {
     margin-top: 20px;
-    input{
-        border-radius: 0;
-        border-color: $dark-blue;
-        box-shadow: none;
-        &:checked{
-            background-color: $dark-blue
-        }
+    input {
+      border-radius: 0;
+      border-color: $dark-blue;
+      box-shadow: none;
+      &:checked {
+        background-color: $dark-blue;
+      }
     }
     label {
       color: #bfbfbf;
@@ -122,6 +124,64 @@ header {
       &:hover {
         background-color: #fff;
         color: $dark-blue;
+      }
+    }
+  }
+}
+
+.distributor {
+  .distrub-cont-text {
+    margin-bottom: 60px;
+    p {
+      &:nth-child(1) {
+        color: #fff;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+      }
+      &:nth-child(2) {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+  .distrub-body {
+    .head {
+      background-color: $blue;
+      padding: 35px 80px;
+      h1 {
+        font-size: $heading-size;
+      }
+      h3 {
+        font-size: $subheading-size;
+        margin-bottom: 0;
+        &:nth-child(3) {
+          margin-right: 135px;
+        }
+      }
+    }
+    .list {
+      margin: 50px 0 30px;
+      ul {
+        margin-left: 15px;
+        li {
+          color: $blue;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .apply {
+      text-align: right;
+      margin-bottom: 40px;
+      button {
+        border: 2px solid $yellow;
+        padding: 18px 30px;
+        color: $yellow;
+        background-color: transparent;
+        border-radius: 27px;
+        transition: all 0.5s;
+        &:hover {
+          background-color: $yellow;
+          color: $dark-blue;
+        }
       }
     }
   }

@@ -1,0 +1,20 @@
+.certificates{
+    &-heading{
+        margin-bottom: 100px;
+    }
+    .box{
+        margin-bottom: 60px;
+        &:nth-last-child(1){
+            margin-bottom: 0;
+        }
+        &-head{
+            padding: 20px 60px;
+            h3{
+                font-weight: weight('regular');
+            }
+        }
+        &-body{
+            padding: 60px;
+        }
+    }
+}

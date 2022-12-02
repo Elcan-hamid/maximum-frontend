@@ -10,6 +10,7 @@ body {
   font-weight: weight(regular);
   font-size: 16px;
   line-height: 18px;
+  color: $dark-blue;
 }
 body.theme-dark {
   @include theme-colors($dark-theme: true);
@@ -29,6 +30,10 @@ h3 {
 
 a {
   text-decoration: none;
+  color: unset;
+  &:hover{
+    color: unset;
+  }
 }
 p {
   margin-bottom: 0;

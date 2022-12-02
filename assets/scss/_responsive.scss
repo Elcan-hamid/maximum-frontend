@@ -1,17 +1,17 @@
 @include media(768px, 1200px) {
-  .company {
-    .distributor {
-      .distrub-body {
-        .head {
-          h1 {
-            font-size: 55px !important;
-          }
-          h3 {
-            font-size: 30px !important;
-          }
+  .distributor {
+    .distrub-body {
+      .head {
+        h1 {
+          font-size: 55px !important;
+        }
+        h3 {
+          font-size: 30px !important;
         }
       }
     }
+  }
+  .company {
     .delivery {
       .right-col {
         .text {
@@ -20,6 +20,21 @@
         h3:not(.text) {
           font-size: 60px;
         }
+      }
+    }
+  }
+  .certificates {
+    &-heading {
+      h1 {
+        font-size: 66px;
+      }
+    }
+  }
+
+  .workwithus {
+    .prot-indust-txt {
+      h1 {
+        font-size: 66px;
       }
     }
   }
@@ -51,19 +66,24 @@
 }
 
 @include media(576px, 768px) {
-  .company {
-    .distributor {
-      .distrub-body {
-        .head {
-          padding: 35px !important;
-          h1 {
-            font-size: 45px !important;
-          }
-          h3 {
-            margin-right: 0 !important;
-            font-size: 30px !important;
-          }
+  .distributor {
+    .distrub-body {
+      .head {
+        padding: 35px !important;
+        h1 {
+          font-size: 45px !important;
         }
+        h3 {
+          margin-right: 0 !important;
+          font-size: 30px !important;
+        }
+      }
+    }
+  }
+  .workwithus{
+    .prot-indust-txt {
+      h1 {
+        font-size: 46px;
       }
     }
   }
@@ -116,32 +136,82 @@
 }
 
 @include media-max(576px) {
+  .workwithus {
+    .request-form {
+      &__area {
+        padding: 10px 15px !important;
+      }
+      &__title {
+        font-size: 30px;
+        line-height: 30px;
+      }
+    }
+    .prot-indust-txt {
+      h1 {
+        font-size: 36px;
+      }
+    }
+    .customer-form {
+      &_body {
+        &_inp {
+          margin: 0;
+          label {
+            padding-left: 0;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .certificates {
+    &-heading {
+      h1 {
+        font-size: 30px !important;
+      }
+    }
+    .box {
+      &-head {
+        padding: 20px !important;
+        h3 {
+          font-size: 26px;
+        }
+      }
+      &-body {
+        padding: 20px !important;
+        h3 {
+          font-size: 26px !important;
+        }
+      }
+    }
+  }
   .request {
     h3 {
       font-size: 25px;
     }
   }
+  .distributor {
+    .distrub-body {
+      .head {
+        h1 {
+          font-size: 25px !important;
+        }
+        h3 {
+          font-size: 18px !important;
+          margin-right: 0 !important;
+        }
+      }
+    }
+  }
   .company {
-    .about{
-      &-head{
-        .borderBottom-yellow{
+    .about {
+      &-head {
+        .borderBottom-yellow {
           width: 100%;
         }
       }
     }
     .distributor {
-      .distrub-body {
-        .head {
-          h1 {
-            font-size: 25px !important;
-          }
-          h3 {
-            font-size: 18px !important;
-            margin-right: 0 !important;
-          }
-        }
-      }
-
       .mission,
       .vision {
         &-body {
@@ -196,10 +266,32 @@
   section {
     padding: 50px 0;
   }
+  .workwithus {
+    .request-form {
+      &__area {
+        border-radius: 0 !important;
+      }
+    }
+    .customer-form {
+      &_body {
+        padding: 30px !important;
+      }
+    }
+    
+  }
+  .certificates {
+    &-heading {
+      margin-bottom: 50px !important ;
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
   .request {
     &-inps {
       flex-direction: column;
       input {
+        width: 100% !important;
         &:nth-child(1) {
           margin-right: 0 !important;
         }
