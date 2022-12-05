@@ -70,6 +70,10 @@ ul, li, ol {
   color: #123144 !important;
 }
 
+.text-container {
+  padding: 0 100px;
+}
+
 .btn-form, .btn-form-dark, .btn-form-light {
   font-weight: 400;
   border-radius: 28px;
@@ -195,6 +199,259 @@ ul, li, ol {
   font-weight: 700;
 }
 
+.company .about {
+  position: relative;
+}
+
+.company .about .bg-img {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  top: 80px;
+}
+
+.company .about .bg-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.company .about .arrow {
+  background-color: #A4DCFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  min-height: 30px;
+  min-width: 30px;
+  margin-right: 30px;
+}
+
+.company .about .arrow svg {
+  width: 20px;
+}
+
+.company .about-head {
+  color: #fff;
+}
+
+.company .about-text {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+.company .about-text div:nth-child(2) {
+  display: flex;
+  justify-content: end;
+}
+
+.company .about-text div p {
+  width: 85%;
+  line-height: 18px;
+}
+
+.company .distributor {
+  background: linear-gradient(180deg, rgba(164, 220, 255, 0.43) 0%, transparent 15%);
+}
+
+.company .distributor .distrub-body .head {
+  background-color: #A4DCFF;
+  padding: 35px 80px;
+}
+
+.company .distributor .distrub-body .head h1 {
+  font-size: 64px;
+}
+
+.company .distributor .distrub-body .head h3 {
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+.company .distributor .distrub-body .head h3:nth-child(3) {
+  margin-right: 135px;
+}
+
+.company .distributor .distrub-body .list {
+  margin-top: 50px;
+}
+
+.company .distributor .distrub-body .list ul {
+  margin-left: 15px;
+}
+
+.company .distributor .distrub-body .list ul li {
+  color: #A4DCFF;
+  margin-bottom: 10px;
+}
+
+.company .distributor .distrub-body .apply {
+  text-align: right;
+  margin-bottom: 40px;
+}
+
+.company .distributor .distrub-body .apply button {
+  border: 2px solid #F9D522;
+  padding: 18px 30px;
+  color: #F9D522;
+  background-color: transparent;
+  border-radius: 27px;
+  transition: all 0.5s;
+}
+
+.company .distributor .distrub-body .apply button:hover {
+  background-color: #F9D522;
+  color: #123144;
+}
+
+.company .distributor .mission .head {
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.company .distributor .mission-body {
+  position: relative;
+}
+
+.company .distributor .mission-body .image {
+  width: 650px;
+  height: 594px;
+}
+
+.company .distributor .mission-body .image img {
+  height: 100%;
+  width: 100%;
+}
+
+.company .distributor .mission-body .body-text {
+  background-color: #F9D522;
+  opacity: 0.9;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 662px;
+  min-height: 419px;
+  text-align: right;
+  padding: 35px 80px;
+}
+
+.company .distributor .mission-body .body-text div {
+  margin-bottom: 25px;
+}
+
+.company .distributor .mission-body .body-text div p {
+  margin-bottom: 10px;
+}
+
+.company .distributor .vision .head {
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.company .distributor .vision-body {
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+
+.company .distributor .vision-body .image {
+  width: 650px;
+  height: 594px;
+}
+
+.company .distributor .vision-body .image img {
+  height: 100%;
+  width: 100%;
+}
+
+.company .distributor .vision-body .body-text {
+  background-color: #F9D522;
+  opacity: 0.9;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 662px;
+  min-height: 419px;
+  text-align: left;
+  padding: 90px 80px;
+}
+
+.company .distributor .vision-body .body-text div:nth-child(1) {
+  margin-bottom: 50px;
+}
+
+.company .delivery {
+  background-color: #fff;
+  color: #123144;
+}
+
+.company .delivery .left-col .image img {
+  width: 365px;
+  height: 365px;
+  border-radius: 50%;
+}
+
+.company .delivery .right-col {
+  color: #123144;
+}
+
+.company .delivery .right-col .countries,
+.company .delivery .right-col .liters {
+  font-size: 96px;
+}
+
+.company .delivery .right-col p {
+  text-transform: uppercase;
+}
+
+.company .delivery .factory {
+  margin-top: 200px;
+}
+
+.company .delivery .factory-btns button {
+  width: 152px;
+  border-radius: 28px;
+  background-color: #fff;
+  color: #123144;
+  border: 1px solid #123144;
+  padding: 5px 0;
+  font-size: 15px;
+}
+
+.company .delivery .factory-btns button:nth-child(2) {
+  margin: 0 10px;
+}
+
+.company .delivery .factory-btns button.active {
+  background-color: #123144;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.company .delivery .factory .img-grid {
+  margin-top: 80px;
+}
+
+.company .delivery .factory-text p {
+  line-height: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .about-text div p {
+    width: unset !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .distributor .distrub-body .head {
+    padding: 15px !important;
+  }
+}
+
 header {
   height: 145px;
   padding: 60px 0 30px;
@@ -251,7 +508,7 @@ header .work-with-us img {
 }
 
 section {
-  margin: 75px 0 50px;
+  padding: 75px 0 50px;
 }
 
 section .header-img {
@@ -484,233 +741,6 @@ section .base-products-item__title {
 
 .request-btn {
   margin-top: 40px;
-}
-
-.company .about {
-  position: relative;
-}
-
-.company .about .bg-img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  top: 80px;
-}
-
-.company .about .bg-img img {
-  height: 100%;
-  width: 100%;
-}
-
-.company .about .arrow {
-  background-color: #A4DCFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
-  margin-right: 30px;
-}
-
-.company .about .arrow svg {
-  width: 20px;
-}
-
-.company .about-head {
-  color: #fff;
-}
-
-.company .about-text {
-  color: #fff;
-  font-size: 16px;
-  margin-top: 25px;
-}
-
-.company .about-text div:nth-child(2) {
-  display: flex;
-  justify-content: end;
-}
-
-.company .about-text div p {
-  width: 85%;
-  line-height: 18px;
-}
-
-.company .distributor {
-  background: linear-gradient(180deg, rgba(164, 220, 255, 0.43) 0%, transparent 100%);
-}
-
-.company .distributor .head {
-  background-color: #A4DCFF;
-  padding: 35px 80px;
-}
-
-.company .distributor .head h1 {
-  font-size: 64px;
-}
-
-.company .distributor .head h3 {
-  font-size: 36px;
-  margin-bottom: 0;
-}
-
-.company .distributor .head h3:nth-child(3) {
-  margin-right: 135px;
-}
-
-.company .distributor .list {
-  margin-top: 50px;
-}
-
-.company .distributor .list ul {
-  margin-left: 15px;
-}
-
-.company .distributor .list ul li {
-  color: #A4DCFF;
-  margin-bottom: 10px;
-}
-
-.company .distributor .apply {
-  text-align: right;
-  margin-bottom: 40px;
-}
-
-.company .mission .head {
-  color: #fff;
-  margin-bottom: 25px;
-}
-
-.company .mission-body {
-  position: relative;
-}
-
-.company .mission-body .image {
-  width: 650px;
-  height: 594px;
-}
-
-.company .mission-body .image img {
-  height: 100%;
-  width: 100%;
-}
-
-.company .mission-body .body-text {
-  background-color: #F9D522;
-  opacity: 0.9;
-  font-weight: 500;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 662px;
-  min-height: 419px;
-  text-align: right;
-  padding: 35px 80px;
-}
-
-.company .mission-body .body-text div {
-  margin-bottom: 25px;
-}
-
-.company .mission-body .body-text div p {
-  margin-bottom: 10px;
-}
-
-.company .vision .head {
-  color: #fff;
-  margin-bottom: 25px;
-}
-
-.company .vision-body {
-  position: relative;
-  display: flex;
-  justify-content: end;
-}
-
-.company .vision-body .image {
-  width: 650px;
-  height: 594px;
-}
-
-.company .vision-body .image img {
-  height: 100%;
-  width: 100%;
-}
-
-.company .vision-body .body-text {
-  background-color: #F9D522;
-  opacity: 0.9;
-  font-weight: 500;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 662px;
-  min-height: 419px;
-  text-align: left;
-  padding: 90px 80px;
-}
-
-.company .vision-body .body-text div:nth-child(1) {
-  margin-bottom: 50px;
-}
-
-.company .delivery {
-  background-color: #fff;
-  color: #123144;
-}
-
-.company .delivery .left-col .image img {
-  width: 365px;
-  height: 365px;
-  border-radius: 50%;
-}
-
-.company .delivery .right-col {
-  color: #123144;
-}
-
-.company .delivery .right-col .countries,
-.company .delivery .right-col .liters {
-  font-size: 96px;
-}
-
-.company .delivery .right-col p {
-  text-transform: uppercase;
-}
-
-.company .delivery .factory {
-  margin-top: 200px;
-}
-
-.company .delivery .factory-btns button {
-  width: 152px;
-  border-radius: 28px;
-  background-color: #fff;
-  color: #123144;
-  border: 1px solid #123144;
-  padding: 5px 0;
-  font-size: 15px;
-}
-
-.company .delivery .factory-btns button:nth-child(2) {
-  margin: 0 10px;
-}
-
-.company .delivery .factory-btns button.active {
-  background-color: #123144;
-  color: #fff;
-  border: 1px solid #fff;
-}
-
-.company .delivery .factory .img-grid {
-  margin-top: 80px;
-}
-
-.company .delivery .factory-text p {
-  line-height: 20px;
 }
 
 footer {
