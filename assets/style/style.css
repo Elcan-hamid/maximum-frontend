@@ -67,11 +67,16 @@ ul, li, ol {
   color: #123144 !important;
 }
 
+.btn-form, .btn-form-dark, .btn-form-light {
+  font-weight: 400;
+  border-radius: 28px;
+  border: none;
+  padding: 15px 22px;
+}
+
 .btn-form-dark {
   background-color: #123144;
   color: #fff;
-  padding: 15px 22px;
-  font-weight: 400;
 }
 
 .btn-form-dark:hover {
@@ -81,8 +86,6 @@ ul, li, ol {
 .btn-form-light {
   background-color: #A4DCFF;
   color: #123144;
-  padding: 15px 22px;
-  font-weight: 400;
 }
 
 .border-bottom {
@@ -358,6 +361,50 @@ section .base-products-item__title {
 
 .why-choose-us .reasons-block a:hover {
   color: #F9D522;
+}
+
+.request-inps {
+  display: flex;
+}
+
+.request-inps input {
+  padding-left: 20px;
+  border: 1px solid #A4DCFF;
+  background-color: transparent;
+  color: #fff;
+  width: 360px;
+  height: 50px;
+}
+
+.request-inps input:nth-child(1) {
+  margin-right: 45px;
+}
+
+.request-inps input::placeholder {
+  color: #bfbfbf;
+}
+
+.request .form-check {
+  margin-top: 20px;
+}
+
+.request .form-check input {
+  border-radius: 0;
+  border-color: #123144;
+  box-shadow: none;
+}
+
+.request .form-check input:checked {
+  background-color: #123144;
+}
+
+.request .form-check label {
+  color: #bfbfbf;
+  margin-top: 4px;
+}
+
+.request-btn {
+  margin-top: 40px;
 }
 
 footer {

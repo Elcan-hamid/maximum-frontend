@@ -48,21 +48,26 @@ ul, li, ol{
     }
 }
 
+.btn-form{
+    font-weight: weight(regular);
+    border-radius: $border-radius;
+    border: none;
+    padding: 15px 22px;
+}
+
 .btn-form-dark{
+    @extend .btn-form;
     background-color: $dark-blue;
     color: #fff;
-    padding: 15px 22px;
-    font-weight: weight(regular);
     &:hover{
         color: #fff;
     }
 }
 
 .btn-form-light{
+    @extend .btn-form;
     background-color: $blue;
     color: $dark-blue;
-    padding: 15px 22px;
-    font-weight: weight(regular);
 }
 
 .border-bottom{

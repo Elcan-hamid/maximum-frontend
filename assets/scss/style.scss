@@ -179,6 +179,44 @@ section{
     }
 }
 
+.request {
+    &-inps {
+      display: flex;
+      input {
+        padding-left: 20px;
+        border: 1px solid $blue;
+        background-color: transparent;
+        color: #fff;
+        width: 360px;
+        height: 50px;
+        &:nth-child(1) {
+          margin-right: 45px;
+        }
+        &::placeholder {
+          color: #bfbfbf;
+        }
+      }
+    }
+    .form-check {
+      margin-top: 20px;
+      input{
+          border-radius: 0;
+          border-color: $dark-blue;
+          box-shadow: none;
+          &:checked{
+              background-color: $dark-blue
+          }
+      }
+      label {
+        color: #bfbfbf;
+        margin-top: 4px;
+      }
+    }
+    &-btn {
+      margin-top: 40px;
+    }
+  }
+
 footer{
     background-color: $dark-blue;
     padding: 75px 0 50px;
