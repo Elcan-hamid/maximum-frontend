@@ -5,6 +5,10 @@
     outline: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     font-weight: weight(regular);
@@ -76,12 +80,21 @@ ul, li, ol{
     padding-bottom: 50px;
 }
 
+.g-custom{
+    --bs-gutter-x: 6.5rem;
+    --bs-gutter-y: 6.5rem;
+}
+
 .flex-center{
     @include flexCenter;
 }
 
 .flex-between-center{
     @include flexItems(space-between, center);
+}
+
+.flex-between-start{
+    @include flexItems(space-between, flex-start);
 }
 
 @each $name, $color in $colors {

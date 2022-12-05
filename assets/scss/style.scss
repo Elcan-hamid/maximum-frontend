@@ -114,6 +114,71 @@ section{
     }
 }
 
+.why-choose-us{
+    background: linear-gradient(180deg, rgba(164, 220, 255, 0.43) 0%, rgba(164, 220, 255, 0) 35%);
+    padding-top: 297px;
+    margin-top: -13rem;
+    .reasons{
+        .row > [class*='col-']{
+            display: flex;
+        }
+        &-item{
+            background-color: $yellow;
+            padding: 40px 18px 40px 30px;
+            min-height: 418px;
+        }
+        &-block{
+            position: relative;
+            width: 100%;
+            &__numbers{
+                border: 2px solid $blue;
+                border-radius: 10px;
+                padding: 50px 24px 28px 30px;
+                height: 140px;
+                margin-bottom: 30px;
+                &.block-1:after{
+                    content: "1";
+                    position: absolute;
+                    top: -10px;
+                    left: 10%;
+                    padding-left: 15px;
+                    height: 30px;
+                    width: 90px;
+                    background-color: $dark-blue;
+                    font-size: $title-size;
+                    color: $yellow;
+                }
+                &.block-2:after{
+                    content: "2";
+                    @extend .reasons-block__numbers.block-1:after;
+                }
+                &.block-3:after{
+                    content: "3";
+                    @extend .reasons-block__numbers.block-1:after;
+                }
+                // .number{
+                //     color: $yellow;
+                //     font-size: $title-size;
+                //     position: absolute;
+                //     top: -10px;
+                //     left: 15%;
+                //     z-index: 10;
+                // }
+                .text{
+                    color: #fff;
+                }   
+            }
+            
+            a{
+                text-decoration: underline;
+                &:hover{
+                    color: $yellow;
+                }
+            }
+        }
+    }
+}
+
 footer{
     background-color: $dark-blue;
     padding: 75px 0 50px;
@@ -133,6 +198,26 @@ footer{
                     width: 55px;    
                     @include flexCenter;
                     margin-right: 30px;
+                }
+            }
+            .catalogue{
+                background-color: $yellow;
+                padding: 18px 15px;
+                margin-right: 3.5rem;
+                height: 238px;
+                width: 206px;
+                color: $dark-blue;
+                font-weight: weight(bold);
+                z-index: 100;
+                &-area{
+                    border-top: 2px solid $dark-blue;
+                    border-bottom: 2px solid $dark-blue;
+                    padding: 19px 0 24px;
+                    height: 100%;
+                    .download{
+                        @include flexItems(space-between, flex-end);
+                        width: 100%;
+                    }
                 }
             }
         }

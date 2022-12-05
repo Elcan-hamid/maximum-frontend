@@ -5,10 +5,23 @@
     h3{
         font-size: $subheading-mb-size;
     }
+    footer{
+        .foot-area{
+            .first-sec{
+                padding-top: 75px;
+            }
+        }
+    }
 }
 
 @include media-max(992px){
     .arrow-img{
         display: none;
+    }
+}
+
+@include media-min(1400px){
+    .g-custom{
+        
     }
 }
