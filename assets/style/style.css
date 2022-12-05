@@ -107,7 +107,7 @@ ul, li, ol {
 
 .g-custom {
   --bs-gutter-x: 6.5rem;
-  --bs-gutter-y: 6.5rem;
+  --bs-gutter-y: 3.5rem;
 }
 
 .flex-center {
@@ -363,15 +363,71 @@ section .base-products-item__title {
   color: #F9D522;
 }
 
+.theme-dark .request {
+  background-color: transparent;
+}
+
+.theme-dark .request h3 {
+  color: #fff;
+}
+
+.theme-dark .request-inps {
+  display: flex;
+}
+
+.theme-dark .request-inps input {
+  padding-left: 20px;
+  border: 1px solid #A4DCFF;
+  background-color: transparent;
+  color: #fff;
+  width: 360px;
+  height: 50px;
+}
+
+.theme-dark .request-inps input:nth-child(1) {
+  margin-right: 45px;
+}
+
+.theme-dark .request-inps input::placeholder {
+  color: #bfbfbf;
+}
+
+.theme-dark .request .form-check {
+  margin-top: 20px;
+}
+
+.theme-dark .request .form-check input {
+  border-radius: 0;
+  border-color: #123144;
+  box-shadow: none;
+}
+
+.theme-dark .request .form-check input:checked {
+  background-color: #123144;
+}
+
+.theme-dark .request .form-check label {
+  color: #bfbfbf;
+  margin-top: 4px;
+}
+
+.theme-dark .request-btn {
+  margin-top: 40px;
+}
+
+.request {
+  background-color: #fff;
+}
+
 .request-inps {
   display: flex;
 }
 
 .request-inps input {
   padding-left: 20px;
-  border: 1px solid #A4DCFF;
+  border: 1px solid #000;
   background-color: transparent;
-  color: #fff;
+  color: #123144;
   width: 360px;
   height: 50px;
 }
@@ -519,6 +575,18 @@ footer span {
   h3 {
     font-size: 30px;
   }
+  section .dark-text h1, section .dark-text h2 {
+    font-size: 50px;
+  }
+  .why-choose-us .reasons-block {
+    margin-bottom: 40px;
+  }
+  .request-inps {
+    flex-direction: column;
+  }
+  .request-inps input:nth-child(1) {
+    margin-right: 0 !important;
+  }
   footer .foot-area .first-sec {
     padding-top: 75px;
   }
@@ -527,6 +595,44 @@ footer span {
 @media screen and (max-width: 992px) {
   .arrow-img {
     display: none;
+  }
+  .g-custom {
+    --bs-gutter-x: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .g-custom {
+    --bs-gutter-x: 4.5rem;
+  }
+  .company .mission-body .body-text {
+    transform: translate(0, -50%);
+    left: unset;
+    right: 0;
+  }
+  .company .vision-body .body-text {
+    transform: translate(0, -50%);
+    right: unset;
+    left: 0;
+  }
+}
+
+@media (min-width: 476px) and (max-width: 768px) {
+  .why-choose-us {
+    margin-top: -12.6rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .company .distributor .head {
+    padding: 35px !important;
+  }
+  .company .distributor .head h1 {
+    font-size: 45px !important;
+  }
+  .company .distributor .head h3 {
+    margin-right: 0 !important;
+    font-size: 30px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

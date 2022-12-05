@@ -62,3 +62,9 @@ $colors: ("yellow": $yellow, "blue": $blue, "darkblue": $dark-blue, "lightblue":
         @content;
     }
 }
+
+@mixin media($min,$max) {
+    @media (min-width:$min) and (max-width:$max){
+        @content
+    }
+}

@@ -156,14 +156,6 @@ section{
                     content: "3";
                     @extend .reasons-block__numbers.block-1:after;
                 }
-                // .number{
-                //     color: $yellow;
-                //     font-size: $title-size;
-                //     position: absolute;
-                //     top: -10px;
-                //     left: 15%;
-                //     z-index: 10;
-                // }
                 .text{
                     color: #fff;
                 }   
@@ -179,14 +171,59 @@ section{
     }
 }
 
+.theme-dark{
+    .request {
+        background-color: transparent;
+        h3{
+            color: #fff;
+        }
+        &-inps {
+          display: flex;
+          input {
+            padding-left: 20px;
+            border: 1px solid $blue;
+            background-color: transparent;
+            color: #fff;
+            width: 360px;
+            height: 50px;
+            &:nth-child(1) {
+              margin-right: 45px;
+            }
+            &::placeholder {
+              color: #bfbfbf;
+            }
+          }
+        }
+        .form-check {
+          margin-top: 20px;
+          input{
+              border-radius: 0;
+              border-color: $dark-blue;
+              box-shadow: none;
+              &:checked{
+                  background-color: $dark-blue
+              }
+          }
+          label {
+            color: #bfbfbf;
+            margin-top: 4px;
+          }
+        }
+        &-btn {
+          margin-top: 40px;
+        }
+    }
+}
+
 .request {
+    background-color: #fff;
     &-inps {
       display: flex;
       input {
         padding-left: 20px;
-        border: 1px solid $blue;
+        border: 1px solid #000;
         background-color: transparent;
-        color: #fff;
+        color: $dark-blue;
         width: 360px;
         height: 50px;
         &:nth-child(1) {
@@ -215,7 +252,8 @@ section{
     &-btn {
       margin-top: 40px;
     }
-  }
+}
+
 
 footer{
     background-color: $dark-blue;

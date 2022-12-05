@@ -5,6 +5,26 @@
     h3{
         font-size: $subheading-mb-size;
     }
+    section .dark-text h1, section .dark-text h2{
+        font-size: $title-mb-size;
+    }
+    .why-choose-us{
+        .reasons{
+            &-block{
+                margin-bottom: 40px;    
+            }
+        }
+    }
+    .request {
+        &-inps {
+          flex-direction: column;
+          input {
+            &:nth-child(1) {
+              margin-right: 0 !important;
+            }
+          }
+        }
+    }
     footer{
         .foot-area{
             .first-sec{
@@ -18,6 +38,9 @@
     .arrow-img{
         display: none;
     }
+    .g-custom{
+        --bs-gutter-x: 1.5rem;
+    }
 }
 
 @include media-min(1400px){
@@ -25,3 +48,53 @@
         
     }
 }
+
+@include media(992px, 1200px) {
+    .g-custom{
+        --bs-gutter-x: 4.5rem;
+    }
+    .company {
+      .mission {
+        &-body {
+          .body-text {
+            transform: translate(0, -50%);
+            left: unset;
+            right: 0;
+          }
+        }
+      }
+      .vision {
+        &-body {
+          .body-text {
+            transform: translate(0, -50%);
+            right: unset;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @include media(476px, 768px){
+    .why-choose-us{
+        margin-top: -12.6rem;
+    }
+  }
+
+  
+  @include media(576px, 768px) {
+    .company {
+      .distributor {
+        .head {
+          padding: 35px !important;
+          h1 {
+            font-size: 45px !important;
+          }
+          h3 {
+            margin-right: 0 !important;
+            font-size: 30px !important;
+          }
+        }
+      }
+    }
+  }
