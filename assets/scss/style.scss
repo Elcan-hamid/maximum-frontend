@@ -5,27 +5,22 @@
 header{
     height: 145px;
     padding: 60px 0 30px;
-    // border:1px solid #fff;
     .menu{
         .breadcrumb{
             margin-bottom: 0;
             align-items: center;
             &-item{
-                padding-left: 1rem;
-                &.active{
-                    padding: 7px 17px;
-                    border-radius: $border-radius;
-                    background-color: $blue;
-                    a{
-                        color: $dark-blue;
-                    }
-                }
                 &::before{
                     color: $blue;
-                    padding-right: 1rem;
                 }
                 a{
                     color: $blue;
+                    padding: 7px 17px;
+                    &.active{
+                        border-radius: $border-radius;
+                        background-color: $blue;
+                        color: $dark-blue;
+                    }
                 }
             }
         }
@@ -172,15 +167,14 @@ section{
     }
 }
 
-.theme-dark{
-    .request {
-        background-color: transparent;
-        h3{
-            color: #fff;
-        }
-        &-inps {
-          display: flex;
-          input {
+.request.dark {
+    background-color: transparent;
+    h3{
+        color: #fff;
+    }
+    .request-inps {
+        display: flex;
+        input {
             padding-left: 20px;
             border: 1px solid $blue;
             background-color: transparent;
@@ -188,31 +182,30 @@ section{
             width: 360px;
             height: 50px;
             &:nth-child(1) {
-              margin-right: 45px;
+                margin-right: 45px;
             }
             &::placeholder {
-              color: #bfbfbf;
+                color: #bfbfbf;
             }
-          }
         }
-        .form-check {
-          margin-top: 20px;
-          input{
-              border-radius: 0;
-              border-color: $dark-blue;
-              box-shadow: none;
-              &:checked{
-                  background-color: $dark-blue
-              }
-          }
-          label {
-            color: #bfbfbf;
-            margin-top: 4px;
-          }
+    }
+    .form-check {
+        margin-top: 20px;
+        input{
+            border-radius: 0;
+            border-color: $dark-blue;
+            box-shadow: none;
+            &:checked{
+                background-color: $dark-blue
+            }
         }
-        &-btn {
-          margin-top: 40px;
+        label {
+        color: #bfbfbf;
+        margin-top: 4px;
         }
+    }
+    &-btn {
+        margin-top: 40px;
     }
 }
 
@@ -315,8 +308,7 @@ footer{
             padding: 75px;
             color: $blue;
             @include media-max(992px){
-                padding-left: 0;
-                padding-right: 0;
+                padding: 32px 0;
             }
             p{
                 font-weight: weight(medium);
