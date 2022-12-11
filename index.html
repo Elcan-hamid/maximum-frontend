@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 <body class="theme-dark">
-
+    
     <header id="header">
         <div class="container">
             <div class="flex-between-center">
                 <div class="logo">
-                    <img src="./assets/img/logo/logo-maximum2.png" width="158" alt="Maximum Logo">
+                    <img src="./assets/img/logo/logo-maximum2.png" class="d-none d-sm-block" width="158" alt="Maximum Logo">
+                    <img src="./assets/img/logo/logo-maximum.png" class="d-sm-none" width="158" alt="Maximum Logo">
                 </div>
-                <div class="menu">
+                <div class="menu d-none d-lg-block">
                     <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
@@ -31,9 +32,14 @@
                         </ol>
                     </nav>
                 </div>
-                <div class="work-with-us">
+                <div class="work-with-us d-none d-lg-block">
                     <a href="work-with-us.html" class="btn-cta">Work with us</a>
                     <img src="./assets/img/svg/right-arrow.svg" alt="Work with us">
+                </div>
+                <div class="side-menu-close d-lg-none flex-wrap flex-column flex-center ml-auto">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div> 
         </div>
@@ -59,7 +65,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="base-products">
         <div class="container">
             <div class="dark-text">
                 <h2>Our base products</h2>
@@ -133,19 +139,19 @@
 
                 <div class="reasons">
                     <div class="row g-custom">
-                        <div class="col-md-4">
+                        <div class="col-4">
                             <div class="reasons-item">
                                 <p>First and foremost, we offer laboratory analyses free of charge both on the product that we sell, and the field samples fed back to us from our suppliers and contractors. Our in-house lab is internationally certified, and can provide virtually all tests associated with lubricants and auto-chemicals. Rest assured that all raw materials procured and all products delivered are subject to stringent internal benchmarking rules that we do not compromise. We attach the utmost importance to quality and requirements of our customers.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-4">
                             <div class="reasons-item">
                                 <p>Second, we can deliver our products in all packing forms. Ranging from the smallest 250ml for brake fluid to 21,000 L in a flexi-tank container. Not only can we fill different volumes, we also have a dedicated team that can plan the route and deliver your goods under conditions required. We are capable of making global deliveries.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-4">
                             <div class="reasons-item">
                                 <p>Third, we hold integrity as a principle of import in all our dealings. With us, there are no unpleasant surprises. We support our customers to the best of our ability, and when we are unable to do so we find someone who can. We are the company that goes the extra mile, and we are proud of this approach.
                                 </p>
@@ -228,9 +234,9 @@
             <div class="foot-area">
                 <div class="first-sec">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 order-md-1 order-2">
                             <img src="./assets/img/logo/logo-maximum2.png" width="280" alt="Maximum Logo">
-                            <p class="mt-4">Maximum Schmierstoffe und Autochemie was created in 2021 with the sole purpose of delivering high-quality lubricants and autochemicals to customers at fair prices. We believe that lubrciants and autochemicals should be of exceptional quality, but also at fair prices, and we reflect this belief, as much as we can, on our customers. </p>
+                            <p class="mt-4 font-sm-10">Maximum Schmierstoffe und Autochemie was created in 2021 with the sole purpose of delivering high-quality lubricants and autochemicals to customers at fair prices. We believe that lubrciants and autochemicals should be of exceptional quality, but also at fair prices, and we reflect this belief, as much as we can, on our customers. </p>
                             <div class="social-icons">
                                 <a href="https://instagram.com">
                                     <img src="./assets/img/svg/instagram.svg" alt="Maximum Instagram">
@@ -240,8 +246,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-6 mt-md-0 mt-5">
-                            <div class="d-flex align-items-end float-md-end">
+                        <div class="col-md-6 order-md-2">
+                            <div class="d-flex align-items-end float-md-end justify-content-md-start justify-content-between">
                                 <div class="catalogue">
                                     <div class="catalogue-area">
                                         <div class="flex-between-start flex-column h-100">
@@ -281,7 +287,7 @@
                 </div>
                 <div class="third-sec">
                     <div class="row mx-auto">
-                        <div class="col-md-3 col-6 mb-md-0 mb-5">
+                        <div class="col-12 col-md-3 col-sm-6 mb-md-0 mb-5">
                             <p>Company</p>
                             <ul>
                                 <li><a href="#">Mission</a></li>
@@ -289,7 +295,7 @@
                                 <li><a href="#">Why Maximum</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-3 col-6 mb-md-0 mb-5">
+                        <div class="col-12 col-md-3 col-sm-6 mb-md-0 mb-5">
                             <p>Products</p>
                             <ul>
                                 <li><a href="#">Motor oil</a></li>
@@ -298,7 +304,7 @@
                                 <li><a href="#">Antifreeze and brake fluid</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-3 col-6">
+                        <div class="col-12 col-md-3 col-sm-6 mb-md-0 mb-5">
                             <p>Certificates and Approvals</p>
                             <ul>
                                 <li><a href="#">Client testimonials</a></li>
@@ -306,7 +312,7 @@
                                 <li><a href="#">Responsibility</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-3 col-6">
+                        <div class="col-12 col-md-3 col-sm-6">
                             <p>Contact us</p>
                             <ul>
                                 <li><a href="#">Become a distributor</a></li>

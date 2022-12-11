@@ -16,7 +16,7 @@ body{
     line-height: 18px;
 }
 body.theme-dark{
-    @include theme-colors($dark-theme: true)
+    @include theme-colors($dark-theme: true);
 }
 
 h1{font-size: $title-size}
@@ -107,6 +107,13 @@ ul, li, ol{
 
 .flex-between-start{
     @include flexItems(space-between, flex-start);
+}
+
+.font-sm-10{
+    @include media-max(576px){
+        font-size: $font-extra-small;
+        line-height: 12px;
+    }
 }
 
 @each $name, $color in $colors {

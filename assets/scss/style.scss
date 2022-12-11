@@ -5,6 +5,14 @@
 header{
     height: 145px;
     padding: 60px 0 30px;
+    @include media-max(992px){
+        height: 74px;
+        padding: 34px 20px 20px;
+    }
+    @include media-max(576px){
+        background-color: #fff;
+        padding: 25px 0 0;
+    }
     .menu{
         .breadcrumb{
             margin-bottom: 0;
@@ -44,10 +52,61 @@ header{
             right: 13px;
         }
     }
+    .side-menu-close{
+        @include media-max(576px){
+            height: 74px;
+            width: 74px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        background-color: $yellow;
+        height: 60px;
+        width: 60px;
+        cursor: pointer;
+        span{
+            width: 34px;
+            height: 3px;
+            background-color: #fff;
+            position: relative;
+            transition: .4s;
+            -webkit-transition: .4s;
+            -moz-transition: .4s;
+            -ms-transition: .4s;
+            -o-transition: .4s;
+            opacity: 1;
+            &:nth-child(1) {
+                top: -7px;
+            }
+              
+            &:nth-child(3) {
+                bottom: -7px;
+            }
+        }
+    }
+    .side-menu-close.closed{
+        span:nth-child(1){
+            transform: translateY(9px) rotate(45deg);
+            -webkit-transform: translateY(9px) rotate(45deg);
+            -moz-transform: translateY(9px) rotate(45deg);
+            -ms-transform: translateY(9px) rotate(45deg);
+            -o-transform: translateY(9px) rotate(45deg);
+        }
+        span:nth-child(2){
+            display: none;
+        }
+        span:nth-child(3){
+            transform: translateY(-7px) rotate(-45deg);
+            -webkit-transform: translateY(-7px) rotate(-45deg);
+            -moz-transform: translateY(-7px) rotate(-45deg);
+            -ms-transform: translateY(-7px) rotate(-45deg);
+            -o-transform: translateY(-7px) rotate(-45deg);
+        }
+    }
 }
 
 section{
-    padding: 75px 0 50px;
+    padding-top: 75px;
     .header-img{
         position: relative;
         .cover-text{
@@ -59,6 +118,22 @@ section{
             .btn{
                 color: $yellow;
                 border: 1px solid $blue;
+            }
+            @include media-max(768px){
+                p{
+                    font-size: 16px;
+                    line-height: 16px;
+                }
+            }
+            @include media-max(992px){
+                position: initial;
+                width: auto;
+                margin-top: 30px;
+                .btn{
+                    padding: 0;
+                    border: transparent;
+                    font-size: $font-small;
+                }
             }
         }
     }
@@ -75,9 +150,23 @@ section{
             border-bottom: 1px solid $blue;
             padding-top: 50px;
             padding-bottom: 50px;
+            @include media-max(768px){
+                padding-top: 25px;
+                padding-bottom: 25px;
+                &:first-child{
+                    padding-top: 0;
+                }
+            }
             &__img{
                 position: relative;
                 .cover-text{
+                    @include media-max(576px){
+                        width: 90%;
+                    }
+                    @include media-max(992px){
+                        top: 25px;
+                        left: 25px;
+                    }
                     position: absolute;
                     top: 60px;
                     left: 55px;
@@ -97,6 +186,7 @@ section{
                         background-color: $blue;
                         color: $dark-blue;
                         font-size: 14px;
+                        font-weight: weight(medium);
                     }
                 }
             }
@@ -105,6 +195,12 @@ section{
                 background-color: $blue;
                 color: $dark-blue;
                 text-decoration: underline;
+                @include media-max(992px){
+                    padding: 12px 24px 2px;
+                    h3{
+                        font-size: 16px;
+                    }
+                }
             }
         }
     }
@@ -113,15 +209,27 @@ section{
 .why-choose-us{
     background: linear-gradient(180deg, rgba(164, 220, 255, 0.43) 0%, rgba(164, 220, 255, 0) 35%);
     padding-top: 297px;
-    margin-top: -13rem;
+    margin-top: -9.9rem;
     .reasons{
         .row > [class*='col-']{
             display: flex;
+            @include media-max(768px){
+                margin-top: 0;
+            }
         }
         &-item{
             background-color: $yellow;
             padding: 40px 18px 40px 30px;
             min-height: 418px;
+            font-weight: weight(medium);
+            @include media-max(768px){
+                padding: 14px 7px;
+                font-size: $font-extra-small;
+                min-height: auto;
+                p{
+                    line-height: 10px;
+                }
+            }
         }
         &-block{
             position: relative;
@@ -132,8 +240,7 @@ section{
                 padding: 50px 24px 28px 30px;
                 height: 140px;
                 margin-bottom: 30px;
-                &.block-1:after{
-                    content: "1";
+                &:after{
                     position: absolute;
                     top: -10px;
                     left: 10%;
@@ -144,13 +251,14 @@ section{
                     font-size: $title-size;
                     color: $yellow;
                 }
+                &.block-1:after{
+                    content: "1";
+                }
                 &.block-2:after{
                     content: "2";
-                    @extend .reasons-block__numbers.block-1:after;
                 }
                 &.block-3:after{
                     content: "3";
-                    @extend .reasons-block__numbers.block-1:after;
                 }
                 .text{
                     color: #fff;
@@ -187,6 +295,9 @@ section{
             &::placeholder {
                 color: #bfbfbf;
             }
+            @include media-max(576px){
+                width: auto;
+            }
         }
     }
     .form-check {
@@ -211,6 +322,7 @@ section{
 
 .request {
     background-color: #fff;
+    padding-bottom: 50px;
     &-inps {
       display: flex;
       input {
@@ -254,7 +366,7 @@ section{
 
 footer{
     background-color: $dark-blue;
-    padding: 75px 0 50px;
+    padding: 64px 0 50px;
     .foot-area{
         @include borderCorner;
         margin-bottom: 50px;

@@ -1,48 +1,91 @@
 @include media-max(768px){
-    h1{
-        font-size: $title-mb-size !important;
+  p{
+    font-size: $font-extra-small;
+    line-height: 12px;
+  }
+  .g-custom{
+    --bs-gutter-x: 0.8rem;
+  }
+  header{
+    margin-bottom: 30px;
+  }
+  .reasons{
+    .row > [class*='col-']{
+      display: block !important;
     }
-    h3{
-        font-size: $subheading-mb-size;
+  }
+  section{
+    padding-top: 27px;
+    .base-products{
+      .cover-text{
+        h4, ul{
+          font-size: $font-extra-small;
+          line-height: 12px;
+          margin-bottom: 5px;
+        }
+        .base-btn{
+          padding: 2px 5px;
+          font-size: $font-extra-small;
+        }
+      }
     }
-    section .dark-text h1, section .dark-text h2{
-        font-size: $title-mb-size;
+  }
+  #base-products{
+    margin-bottom: 40px;
+  }
+  .why-choose-us{
+      margin-top: 0;
+      padding-top: 27px;
+      .container > div{
+        padding-bottom: 60px !important;
+      }
+  }
+  .request {
+      &-inps {
+        flex-direction: column;
+        input {
+          &:nth-child(1) {
+            margin-right: 0 !important;
+          }
+        }
+      }
+  }
+  footer{
+    padding: 60px 0 35px;
+    p{
+      font-size: 16px;
+      line-height: 19px;
     }
-    .why-choose-us{
-        .reasons{
-            &-block{
-                margin-bottom: 40px;    
+    .foot-area{
+        .first-sec{
+            padding: 60px 0;
+            .order-md-2{
+                margin-bottom: 100px;
             }
         }
-    }
-    .request {
-        &-inps {
-          flex-direction: column;
-          input {
-            &:nth-child(1) {
-              margin-right: 0 !important;
-            }
+        .third-sec{
+          p{
+            margin-bottom: 15px;
           }
         }
     }
-    footer{
-        .foot-area{
-            .first-sec{
-                padding: 60px 0;
-                .order-md-2{
-                    margin-bottom: 100px;
-                }
-            }
-        }
-    }
+  }
 }
 
 @include media-max(992px){
-    .arrow-img{
-        // display: none;
+    h1{
+      font-size: $title-mb-size !important;
     }
-    .g-custom{
-        --bs-gutter-x: 1.5rem;
+    h3{
+      font-size: $subheading-mb-size;
+    }
+    section .dark-text h2{
+      font-size: 40px;
+    }
+    .arrow-img{
+        img{
+          width: 50%;
+        }
     }
     .company {
         .about {
@@ -117,12 +160,6 @@
     }
   }
 
-  @include media(476px, 768px){
-    .why-choose-us{
-        margin-top: -12.6rem;
-    }
-  }
-
   
   @include media(576px, 768px) {
     .company {
@@ -142,6 +179,22 @@
   }
 
   @include media(768px, 992px){
+    section{
+      .base-products{
+        .cover-text{
+          h4, ul{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .why-choose-us{
+      margin-top: -5.8rem;
+      padding-top: 150px;
+    }
+    .g-custom{
+      --bs-gutter-x: 1.5rem;
+    }
     footer{
         .foot-area{
             .first-sec{
