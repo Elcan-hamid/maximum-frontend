@@ -1,0 +1,396 @@
+@include media-max(576px){
+  .pt-sm-45{
+    padding-top: 45px;
+  }
+  .distributor .distrub-body .apply button{
+    padding: 10px 30px;
+  }
+  .company{
+    .about{
+      .text-box{
+        &.bg-vector-image{
+          height: 350px;
+          p{
+            width: 90% !important;
+          }
+        }
+      }
+    }
+
+    .mission-sec{
+      margin-bottom: 105px;
+      .mission,.vision{
+        height: 350px;
+        .head{
+          .text-container{
+            width: 100%;
+            .borderBottom-yellow{
+              width: 100%;
+            }
+          }
+        }
+        .mission-body{
+          .image{
+            width:246px;
+          }
+          .body-text{
+            padding: 20px;
+            font-size: 10px;
+            line-height: 10px;
+            width: 70%;
+            transform: translate(0 , -30%);
+            div{
+              margin-bottom: 10px;
+              &:nth-child(2){
+                margin-bottom: 0;
+              }
+              p{
+                margin-bottom: 5px;
+              }
+            }
+          }
+        }
+
+        .vision-body{
+          .image{
+            width:246px;
+          }
+          .body-text{
+            padding: 20px;
+            font-size: 10px;
+            line-height: 10px;
+            width: 70%;
+            transform: translate(0 , -30%);
+            div{
+              margin-bottom: 10px;
+              &:nth-child(2){
+                margin-bottom: 0;
+              }
+              p{
+                margin-bottom: 5px;
+              }
+            }
+          }
+        }
+      }
+     
+    }
+
+    .delivery{
+      .right-col{
+        .countries,
+        .liters {
+          font-size: $heading-size;
+        }
+      }
+    }
+  }
+
+  .company .header-img,
+  .products .header-img{
+    padding: 0;
+  }
+
+  .products{
+    .product-list{
+      &__area{
+        padding-top: 30px;
+        padding-bottom: 45px;
+      }
+      .product-list-lines{
+        margin-bottom: 17px;
+        &_item{
+          &__header{
+            .icon{
+              height: 40px;
+              width: 40px;
+              margin-right: 17px;
+            }
+            .title{
+              font-size: 16px;
+              img{
+                height: 11px;
+                width: 9px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-max(992px){
+    h3{
+      font-size: $subheading-mb-size;
+    }
+    .arrow-img{
+        img{
+          width: 50%;
+        }
+    }
+    .text-container{
+      padding: 0;
+    }
+    .company {
+        .mission-sec{
+          .mission{
+            margin-bottom: 70px;
+            &-body{
+              .image{
+                width: 500px;
+                height: auto;
+              }
+              .body-text{
+                padding: 35px;
+                transform: translate(0,-50%);
+                right: 0;
+                left: unset;
+                min-height: unset;
+                width: 90%;
+                font-size: 14px;
+              }
+            }
+          }
+          .vision{
+            &-body{
+              .image{
+                width: 500px;
+                height: auto;
+              }
+              .body-text{
+                padding: 35px;
+                transform: translate(0,-50%);
+                left: 0;
+                right: unset;
+                min-height: unset;
+                width: 90%;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .delivery{
+          .factory{
+            margin-top: 60px;
+            .img-grid{
+              margin-top: 30px;
+            }
+          }
+        }
+        .about{
+          .text-box{
+            &.bg-vector-image{
+              height: 300px;
+            }
+          }
+        }
+    }
+    .products{
+      .product-list{
+        .single-oil{
+          .content{
+            width: 90% !important;
+          }
+        }
+      }
+    }
+}
+
+@include media-max(768px){
+  h1{
+    font-size: $title-mb-size !important;
+  }
+  p{
+    font-size: $font-extra-small;
+    line-height: 12px;
+  }
+  .g-custom{
+    --bs-gutter-x: 0.8rem;
+  }
+  .top-md-35{
+    top: -35px;
+  }
+  .top-md-70{
+    top: -70px;
+  }
+  .pt-md-27{
+    padding-top: 27px;
+  }
+  #breadcrumb{
+    margin-bottom: 30px;
+  }
+  .certificates{
+    &-heading{
+      margin-bottom: 50px;
+    }
+  }
+  .reasons{
+    .row > [class*='col-']{
+      display: block !important;
+    }
+    a{
+      font-size: $font-extra-small
+    }
+  }
+  section{
+    .dark-text h2{
+      font-size: $title-mb-size;
+    }
+    .base-products{
+      .cover-text{
+        h4, ul{
+          font-size: $font-extra-small;
+          line-height: 12px;
+          margin-bottom: 5px;
+        }
+        .base-btn{
+          padding: 2px 5px;
+          font-size: $font-extra-small;
+        }
+      }
+    }
+  }
+  #base-products{
+    margin-bottom: 40px;
+  }
+  .why-choose-us{
+      margin-top: 0;
+      padding-top: 27px;
+      .container > div{
+        padding-bottom: 60px !important;
+      }
+  }
+  .products{
+    .product-list{
+      .single-oil{
+        padding: 20px !important;
+      }
+    }
+  }
+  .request {
+      &-inps {
+        flex-direction: column;
+        input {
+          &:nth-child(1) {
+            margin-right: 0 !important;
+          }
+        }
+      }
+  }
+  footer{
+    padding: 60px 0 35px;
+    p{
+      font-size: 16px;
+      line-height: 19px;
+    }
+    .foot-area{
+        .first-sec{
+            padding: 60px 0;
+            .order-md-2{
+                margin-bottom: 100px;
+            }
+        }
+        .third-sec{
+          p{
+            margin-bottom: 15px;
+          }
+        }
+    }
+  }
+}
+
+@include media-max(414px){
+  h1{
+    font-size: 34px !important;
+  }
+  h3{
+    font-size: 25px;
+  }
+  section{
+    .dark-text h2{
+      font-size: 34px;
+    }
+  }
+}
+
+  
+  @include media(576px, 768px) {
+    .distributor {
+      .head {
+        padding: 35px !important;
+        h1 {
+          font-size: 45px !important;
+        }
+        h3 {
+          margin-right: 0 !important;
+          font-size: 30px !important;
+        }
+      }
+    }
+  }
+
+  @include media(576px, 992px){
+    #breadcrumb{
+      margin-top: 40px;
+    }
+  }
+
+  @include media(768px, 992px){
+    h1{
+      font-size: 50px !important;
+    }
+    section{
+      .dark-text h2{
+        font-size: 50px;
+      }
+      .base-products{
+        .cover-text{
+          h4, ul{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .why-choose-us{
+      margin-top: -5.8rem;
+      padding-top: 150px;
+    }
+    .g-custom{
+      --bs-gutter-x: 1.5rem;
+    }
+    footer{
+        .foot-area{
+            .first-sec{
+                padding-top: 75px;
+            }
+        }
+    }
+  }
+
+  
+@include media(992px, 1200px) {
+  .g-custom{
+      --bs-gutter-x: 4.5rem;
+  }
+  .company {
+    .mission {
+      &-body {
+        .body-text {
+          transform: translate(0, -50%);
+          left: unset;
+          right: 0;
+        }
+      }
+    }
+    .vision {
+      &-body {
+        .body-text {
+          transform: translate(0, -50%);
+          right: unset;
+          left: 0;
+        }
+      }
+    }
+  }
+}

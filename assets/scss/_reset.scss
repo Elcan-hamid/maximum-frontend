@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: weight(regular);
+    font-size: 16px;
+    line-height: 18px;
+}
+body.theme-dark{
+    @include theme-colors($dark-theme: true)
+}
+
+h1{font-size: $title-size}
+h2{font-size: $heading-size; font-weight: weight(medium)}
+h3{font-size: $subheading-size; font-weight: weight(medium)}
+
+a{ text-decoration: none; }
+p{ margin-bottom: 0; }
+
+ul, li, ol{
+    margin: 0;
+    padding: 0;
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+.btn{
+    border-radius: $border-radius;
+}
+.btn:focus{
+    box-shadow: none;
+}
+
+.btn-outline-yellow{
+    border: 1px solid $yellow;
+    border-radius: $border-radius;
+    padding: 18px 41px;
+    font-weight: weight(medium);
+    color: $yellow;
+    transition: all 0.5s;
+    &:hover{
+        background-color: $yellow;
+        color: $dark-blue !important;
+    }
+}
+
+.text-container{
+    padding: 0 100px;
+}
+
+.btn-form{
+    font-weight: weight(regular);
+    border-radius: $border-radius;
+    border: none;
+    padding: 15px 22px;
+}
+
+.btn-form-dark{
+    @extend .btn-form;
+    background-color: $dark-blue;
+    color: #fff;
+    &:hover{
+        color: #fff;
+    }
+}
+
+.btn-form-light{
+    @extend .btn-form;
+    background-color: $blue;
+    color: $dark-blue;
+}
+
+.border-bottom{
+    border-bottom: 1px solid $blue !important;
+}
+.border-bottom-dark{
+    border-bottom: 1px solid $dark-blue;
+}
+
+.pt-50{
+    padding-top: 50px;
+}
+.pb-50{
+    padding-bottom: 50px;
+}
+.py-50{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.pt-75{
+    padding-top: 75px;
+}
+
+.g-custom{
+    --bs-gutter-x: 6.5rem;
+    --bs-gutter-y: 3.5rem;
+}
+
+.flex-center{
+    @include flexCenter;
+}
+
+.flex-between-center{
+    @include flexItems(space-between, center);
+}
+
+.flex-between-start{
+    @include flexItems(space-between, flex-start);
+}
+
+.font-sm-10{
+    @include media-max(576px){
+        font-size: $font-extra-small;
+        line-height: 12px;
+    }
+}
+
+.position-lg-relative{
+    @include media(576px, 992px){
+        position: relative;
+    }
+}
+
+@each $name, $color in $colors {
+    .color-#{$name} {
+      color: $color;
+    }
+    .bg-#{$name} {
+      background-color: $color;
+    }
+    .borderBottom-#{$name} {
+      border-bottom: 2px solid $color;
+      width: 250px;
+    }
+  }
+
+@each $name, $number in $font-weights {
+    .font-#{$number}{
+        font-weight: weight($name);
+    }
+}
+
+@each $key, $value in $products {
+    .product-list-lines_item__body.#{$key}{
+        .oils{
+            .oil{
+                background-color: $value;
+            }
+        }
+        .single-oil{
+            .content{
+                &-sub{
+                    color: $value;
+                }
+                .links{
+                    a.msds-btn{
+                        background-color: $value;
+                    }
+                }
+            }
+        }
+    }
+}

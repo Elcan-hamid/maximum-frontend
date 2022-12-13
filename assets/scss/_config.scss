@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+$dark-blue: #123144;
+$blue: #A4DCFF;
+$light-blue: #00C2FF;
+$anti-blue: #0084FF;
+$yellow: #F9D522;
+$orange: #FDA905;
+$green: #00B648;
+$pink: #FD05E4;
+$title-size: 96px;
+$title-mb-size: 40px;
+$heading-size: 64px;
+$subheading-size: 36px;
+$subheading-mb-size: 30px;
+$font-small: 12px;
+$font-extra-small: 10px;
+$border-radius: 28px;
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+);
+
+$colors: ("yellow": $yellow, "blue": $blue, "darkblue": $dark-blue, "lightblue": $light-blue);
+$products: ("gear-oils": $light-blue, "turbo-oils": $orange, "fluids": $green, "antifreeze": $anti-blue, "motor-oils": $pink);
+
+@function weight($name){
+    @return map-get($font-weights, $name);
+}
+
+@mixin theme-colors($dark-theme: true){
+    @if $dark-theme{
+        background-color: $dark-blue;
+    } @else{
+        background-color: #fff;
+    }
+}
+
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexItems($justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin borderCorner{
+    border-top: 1px solid $blue;
+    border-bottom: 1px solid $blue;
+}
+
+
+@mixin media-min($size) {
+    @media screen and (min-width: $size){
+        @content;
+    }
+}
+@mixin media-max($size) {
+    @media screen and (max-width: $size){
+        @content;
+    }
+}
+
+@mixin media($min,$max) {
+    @media (min-width:$min) and (max-width:$max){
+        @content
+    }
+}
