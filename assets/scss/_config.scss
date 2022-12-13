@@ -4,6 +4,7 @@
 $dark-blue: #123144;
 $blue: #A4DCFF;
 $light-blue: #00C2FF;
+$anti-blue: #0084FF;
 $yellow: #F9D522;
 $orange: #FDA905;
 $green: #00B648;
@@ -23,6 +24,7 @@ $font-weights: (
 );
 
 $colors: ("yellow": $yellow, "blue": $blue, "darkblue": $dark-blue, "lightblue": $light-blue);
+$products: ("gear-oils": $light-blue, "turbo-oils": $orange, "fluids": $green, "antifreeze": $anti-blue, "motor-oils": $pink);
 
 @function weight($name){
     @return map-get($font-weights, $name);

@@ -16,7 +16,7 @@ body{
     line-height: 18px;
 }
 body.theme-dark{
-    @include theme-colors($dark-theme: true);
+    @include theme-colors($dark-theme: true)
 }
 
 h1{font-size: $title-size}
@@ -31,6 +31,9 @@ ul, li, ol{
     padding: 0;
 }
 
+.text-underline{
+    text-decoration: underline;
+}
 .btn{
     border-radius: $border-radius;
 }
@@ -80,6 +83,9 @@ ul, li, ol{
 .border-bottom{
     border-bottom: 1px solid $blue !important;
 }
+.border-bottom-dark{
+    border-bottom: 1px solid $dark-blue;
+}
 
 .pt-50{
     padding-top: 50px;
@@ -90,6 +96,9 @@ ul, li, ol{
 .py-50{
     padding-top: 50px;
     padding-bottom: 50px;
+}
+.pt-75{
+    padding-top: 75px;
 }
 
 .g-custom{
@@ -116,6 +125,12 @@ ul, li, ol{
     }
 }
 
+.position-lg-relative{
+    @include media(576px, 992px){
+        position: relative;
+    }
+}
+
 @each $name, $color in $colors {
     .color-#{$name} {
       color: $color;
@@ -132,5 +147,27 @@ ul, li, ol{
 @each $name, $number in $font-weights {
     .font-#{$number}{
         font-weight: weight($name);
+    }
+}
+
+@each $key, $value in $products {
+    .product-list-lines_item__body.#{$key}{
+        .oils{
+            .oil{
+                background-color: $value;
+            }
+        }
+        .single-oil{
+            .content{
+                &-sub{
+                    color: $value;
+                }
+                .links{
+                    a.msds-btn{
+                        background-color: $value;
+                    }
+                }
+            }
+        }
     }
 }

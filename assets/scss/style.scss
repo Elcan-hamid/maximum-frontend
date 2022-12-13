@@ -1,6 +1,8 @@
 @import 'config';
 @import 'reset';
 @import 'company';
+@import 'products';
+
 
 header{
     height: 145px;
@@ -12,6 +14,10 @@ header{
     @include media-max(576px){
         background-color: #fff;
         padding: 25px 0 0;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1000;
     }
     .menu{
         .breadcrumb{
@@ -28,6 +34,22 @@ header{
                         border-radius: $border-radius;
                         background-color: $blue;
                         color: $dark-blue;
+                    }
+                }
+            }
+        }
+        &.light{
+            .breadcrumb{
+                &-item{
+                    &::before{
+                        color: $dark-blue;
+                    }
+                    a{
+                        color: $dark-blue;
+                        &.active{
+                            background-color: $dark-blue;
+                            color: #fff;
+                        }
                     }
                 }
             }
@@ -81,7 +103,7 @@ header{
               
             &:nth-child(3) {
                 bottom: -7px;
-            }
+            }   
         }
     }
     .side-menu-close.closed{
@@ -103,10 +125,115 @@ header{
             -o-transform: translateY(-7px) rotate(-45deg);
         }
     }
+    .side-menu-wrap{
+        position: absolute;
+        top: 74px;
+        left: 0;
+        background-color: #fff;
+        visibility: hidden; 
+        width: 100%;
+        z-index: 1000;
+        &.open{
+            visibility: visible;
+        }
+        .side-nav > li:first-child > a{
+            border-top: 0.5px solid #383838;
+        }
+        ul{
+            li{
+                a{
+                    padding: 15px 20px;
+                    border-bottom: 0.5px solid #383838;
+                    display: block;
+                    color: #000;
+                    &.active{
+                        font-weight: weight(medium);
+                    }
+                }
+                ul.submenu{
+                    li{
+                        a{
+                            padding-left: 35px;
+                            padding-right: 35px;
+                        }
+                    }
+                }
+                &.has-submenu{
+                    & > a{
+                        font-weight: weight(medium);
+                        position: relative;
+                        &:before{
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            background-color: $yellow;
+                            height: 100%;
+                            width: 8px;
+                        }
+                        &:after{
+                            content: "";
+                            position: absolute;
+                            top: 21px;
+                            right: 74px;
+                            height: 11px;
+                            width: 12px;
+                            background: url("../img/svg/drop-up.svg") no-repeat;
+                            transition: .4s;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
+#breadcrumb{
+    .container{
+        .breadcrumb{
+            border-top: 1px solid $blue;
+            border-bottom: 0.5px solid $blue;
+            padding: 15px 0;
+            li{
+                a{
+                    color: $blue;
+                }
+                &:before{
+                    color: rgba(164, 220, 255, 0.35);
+                }
+                &.active{
+                    color: rgba(164, 220, 255, 0.35);
+                }
+            }
+            &.light{
+                border-top: 1px solid $dark-blue;
+                border-bottom: 0.5px solid $dark-blue;
+                li{
+                    a{
+                        color: $dark-blue;
+                    }
+                    &:before{
+                        color: rgba(18, 49, 68, 0.35);
+                    }
+                    &.active{
+                        color: rgba(18, 49, 68, 0.35);
+                    }
+                }
+            }
+        }
+        @include media-max(576px){
+            padding-left: 0;
+            padding-right: 0;
+            .breadcrumb{
+                border-top: none;
+                padding-left: 17px;
+                padding-right: 17px;
+            }
+        }
+    }
+}   
+
 section{
-    padding-top: 75px;
     .header-img{
         position: relative;
         .cover-text{
@@ -122,7 +249,7 @@ section{
             @include media-max(768px){
                 p{
                     font-size: 16px;
-                    line-height: 16px;
+                    line-height: 18px;
                 }
             }
             @include media-max(992px){
@@ -241,6 +368,7 @@ section{
                 height: 140px;
                 margin-bottom: 30px;
                 &:after{
+                    content: "";
                     position: absolute;
                     top: -10px;
                     left: 10%;
@@ -263,6 +391,25 @@ section{
                 .text{
                     color: #fff;
                 }   
+                @include media-max(768px){
+                    padding: 14px 11px;
+                    height: 70px;
+                    margin-bottom: 8px;
+                    &:after{
+                        width: 39px;
+                        padding-left: 0;
+                        font-size: 60px;
+                        top: -23px;
+                        font-weight: weight(bold);
+                    }   
+                    .text{
+                        font-size: 10px;
+                        line-height: 10px;
+                    }
+                }
+                @include media-max(414px){
+                    height: 80px;
+                }
             }
             
             a{
@@ -441,6 +588,28 @@ footer{
     span{
         font-size: 14px;
         font-weight: weight(medium);
+    }
+}
+
+// Certificates page
+.certificates{
+    &-heading{
+        margin-bottom: 78px;
+    }
+    .box{
+        margin-bottom: 60px;
+        &:nth-last-child(1){
+            margin-bottom: 0;
+        }
+        &-head{
+            padding: 20px 60px;
+            h3{
+                font-weight: weight('regular');
+            }
+        }
+        &-body{
+            padding: 60px;
+        }
     }
 }
 
