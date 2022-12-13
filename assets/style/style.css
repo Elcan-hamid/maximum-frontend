@@ -293,6 +293,11 @@ ul, li, ol {
   background-color: #FD05E4;
 }
 
+@media screen and (min-width: 768px) {
+  .company .header-img {
+    margin-top: 45px;
+  }
+}
 .company .about {
   position: relative;
   margin-bottom: 40px;
@@ -357,8 +362,8 @@ ul, li, ol {
   font-size: 16px;
 }
 .company .distributor {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(164, 220, 255, 0.43)), color-stop(15%, transparent));
-  background: linear-gradient(180deg, rgba(164, 220, 255, 0.43) 0%, transparent 15%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(164, 220, 255, 0.43)), color-stop(43%, transparent));
+  background: linear-gradient(180deg, rgba(164, 220, 255, 0.43) 0%, transparent 43%);
 }
 .company .distributor .distrub-body .head {
   background-color: #A4DCFF;
@@ -478,6 +483,7 @@ ul, li, ol {
   background-color: #fff;
   color: #123144;
   padding-bottom: 100px;
+  padding-top: 150px;
 }
 .company .delivery .left-col .image img {
   width: 365px;
@@ -890,6 +896,8 @@ header {
     position: sticky;
     top: 0;
     left: 0;
+    -webkit-box-shadow: 0 0 8px 9px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 8px 9px rgba(0, 0, 0, 0.1);
     z-index: 1000;
   }
 }
@@ -1657,6 +1665,9 @@ footer span {
     width: 90%;
     font-size: 14px;
   }
+  .company .delivery .right-col .countries, .company .delivery .right-col .liters {
+    font-size: 64px;
+  }
   .company .delivery .factory {
     margin-top: 60px;
   }
@@ -1692,6 +1703,19 @@ footer span {
   }
   #breadcrumb {
     margin-bottom: 30px;
+  }
+  .company .delivery {
+    padding-top: 50px;
+  }
+  .company .delivery .left-col .image img {
+    height: 177px;
+    width: 177px;
+  }
+  .company .delivery .right-col .count .countries {
+    margin-top: 50px;
+  }
+  .company .delivery .right-col .text {
+    font-size: 16px;
   }
   .certificates-heading {
     margin-bottom: 50px;
@@ -1790,6 +1814,13 @@ footer span {
   }
   section .base-products .cover-text h4, section .base-products .cover-text ul {
     font-size: 14px;
+  }
+  .company .delivery .left-col .image img {
+    height: 300px;
+    width: 300px;
+  }
+  .company .delivery .right-col .text {
+    font-size: 20px;
   }
   .why-choose-us {
     margin-top: -5.8rem;

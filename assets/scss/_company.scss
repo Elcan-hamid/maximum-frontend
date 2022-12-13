@@ -1,4 +1,9 @@
 .company {
+    @include media-min(768px){
+      .header-img{
+        margin-top: 45px;
+      }
+    }
     .about {
       position: relative;
       margin-bottom: 40px;
@@ -61,7 +66,7 @@
       background: linear-gradient(
         180deg,
         rgba(164, 220, 255, 0.43) 0%,
-        transparent 15%
+        transparent 43%
       );
       .distrub-body {
         .head {
@@ -185,6 +190,7 @@
       background-color: #fff;
       color: $dark-blue;
       padding-bottom: 100px;
+      padding-top: 150px;
       .left-col {
         .image {
           img {

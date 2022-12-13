@@ -171,6 +171,11 @@
           }
         }
         .delivery{
+          .right-col{
+            .countries, .liters{
+              font-size: $heading-size;
+            }
+          }
           .factory{
             margin-top: 60px;
             .img-grid{
@@ -219,6 +224,27 @@
   }
   #breadcrumb{
     margin-bottom: 30px;
+  }
+  .company{
+    .delivery{
+      padding-top: 50px;
+      .left-col{
+        .image img{
+          height: 177px;
+          width: 177px;
+        }
+      }
+      .right-col{
+        .count{
+          .countries{
+            margin-top: 50px;
+          }
+        }
+        .text{
+          font-size: 16px;
+        }
+      }
+    }
   }
   .certificates{
     &-heading{
@@ -348,6 +374,21 @@
         .cover-text{
           h4, ul{
             font-size: 14px;
+          }
+        }
+      }
+    }
+    .company{
+      .delivery{
+        .left-col{
+          .image img{
+            height: 300px;
+            width: 300px;
+          }
+        }
+        .right-col{
+          .text{
+            font-size: 20px;
           }
         }
       }
