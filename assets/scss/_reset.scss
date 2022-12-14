@@ -23,7 +23,7 @@ h1{font-size: $title-size}
 h2{font-size: $heading-size; font-weight: weight(medium)}
 h3{font-size: $subheading-size; font-weight: weight(medium)}
 
-a{ text-decoration: none; }
+a{ text-decoration: none; &:hover{ color: inherit; } }
 p{ margin-bottom: 0; }
 
 ul, li, ol{

@@ -91,7 +91,12 @@
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb light">
-                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item">
+                        <a href="/">
+                            <img src="./assets/img/svg/Vector-dark.svg" style="margin-bottom: 2px;" /> 
+                            <span class="ms-1">Home</span>
+                        </a>
+                    </li>
                     <li class="breadcrumb-item active" aria-current="page">Products</li>
                 </ol>
             </nav>
@@ -492,28 +497,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/js/app.js"></script>
-    <script>
-        const accordionBtns = document.querySelectorAll(".product-list-lines_item__header");
-
-        accordionBtns.forEach((accordion) => {
-            accordion.onclick = function () {
-                this.classList.toggle("is-open");
-                let content = this.nextElementSibling;
-
-                if (content.style.maxHeight) {
-                    //this is if the accordion is open
-                    content.style.maxHeight = null;
-                    content.style.display='none';
-                } else {
-                    //if the accordion is currently closed
-                    content.style.maxHeight = "max-content";
-                    content.style.display='block';
-                }
-            };
-        });
-
-    </script>
 
 </body>
 </html>

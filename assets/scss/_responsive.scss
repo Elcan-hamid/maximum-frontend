@@ -118,6 +118,31 @@
       }
     }
   }
+
+  .workwithus{
+    .request-form {
+      &__area {
+        padding: 10px 15px !important;
+      }
+      &__title {
+        font-size: 30px;
+        line-height: 30px;
+      }
+    }
+
+    .customer-form {
+      &_body {
+        &_inp {
+          margin: 0;
+          label {
+            padding-left: 0;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 @include media-max(992px){
@@ -293,6 +318,27 @@
         padding: 20px !important;
       }
     }
+    .categories{
+      .types{
+        .type{
+          margin-right: 10px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .workwithus{
+    .request-form {
+      &__area {
+        border-radius: 0 !important;
+      }
+    }
+    .customer-form{
+      margin-bottom: 40px;
+      &_body{
+        padding: 30px;
+      }
+    }
   }
   .request {
       &-inps {
@@ -351,6 +397,13 @@
         h3 {
           margin-right: 0 !important;
           font-size: 30px !important;
+        }
+      }
+    }
+    .workwithus{
+      .prot-indust-txt {
+        h1 {
+          font-size: 46px;
         }
       }
     }
